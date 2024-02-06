@@ -1,6 +1,6 @@
 base: ghcr.io/vanilla-os/desktop:main
-name: Custom Vanilla Desktop
-id: vanilla-custom
+name: May Personal Vanilla
+id: may-personal-vanilla
 labels:
   maintainer: self-maintained
 args:
@@ -19,12 +19,14 @@ modules:
   type: apt
   source:
     packages:
-    - vim
+    - kakoune
+    - btop
+    - zsh
 
-- name: example-commands
-  type: shell
-  commands:
-  - echo Example output
+# - name: example-commands
+#   type: shell
+#   commands:
+#   - echo Example output
 
 - name: example-modules
   type: includes
