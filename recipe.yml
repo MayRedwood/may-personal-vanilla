@@ -19,9 +19,16 @@ modules:
   type: apt
   source:
     packages:
-    - kakoune
-    - btop
+    - kakoune # Default text editor
+    - btop    # Powerful system monitor
     - zsh
+
+- name: replacement-packages
+  type: apt
+  source:
+    packages:
+    - dbus-broker
+    - iwd
 
 # - name: example-commands
 #   type: shell
