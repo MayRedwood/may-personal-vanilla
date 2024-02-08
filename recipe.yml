@@ -19,11 +19,10 @@ modules:
     type: apt
     source:
       packages:
-        - kakoune # Default text editor
-        - btop    # Powerful system monitor
-        - zsh
+        - kakoune  # Default text editor
+        - btop     # Powerful system monitor
 
-  - name: replacement-packages
+  - name: modern-replacements
     type: apt
     source:
       packages:
